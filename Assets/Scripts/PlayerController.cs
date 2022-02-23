@@ -40,6 +40,7 @@ public class PlayerController : MonoBehaviour
         //Saltar
         if (charController.isGrounded)
         {
+            moveDirection.y = 0f;
             if (Input.GetButtonDown("Jump"))
             {
                 moveDirection.y = jumpForce;
