@@ -1,9 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public static PlayerController instance;
     public float moveSpeed;
     public float jumpForce;
     public float gravityScale = 5f;
@@ -18,8 +20,6 @@ public class PlayerController : MonoBehaviour
     public GameObject playerModel;
 
     public Animator animator;
-
-    public static PlayerController instance;
 
     private void Awake()
     {
