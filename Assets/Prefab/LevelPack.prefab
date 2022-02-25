@@ -1873,7 +1873,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8643550456444480095}
-  m_LocalRotation: {x: 0.24117684, y: 0.58608085, z: -0.18840763, w: 0.7502304}
+  m_LocalRotation: {x: 0.24117687, y: 0.5860808, z: -0.18840761, w: 0.7502303}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2111,8 +2111,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8643550456534366289}
-  m_LocalRotation: {x: 0.18454868, y: 0.06907336, z: -0.013003469, w: 0.98030686}
-  m_LocalPosition: {x: -257.4, y: -19, z: -253.35}
+  m_LocalRotation: {x: 0.17317559, y: 0.07508265, z: -0.013241685, w: 0.98193556}
+  m_LocalPosition: {x: 0, y: 2.293578, z: -3.0733943}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8643550455490353360}
@@ -2245,6 +2245,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8643550456547651700}
   - component: {fileID: 8643550456547651701}
+  - component: {fileID: 985262238}
   m_Layer: 0
   m_Name: SystemsManager
   m_TagString: Untagged
@@ -2278,6 +2279,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67cf5893dfd957a409fe8c06518e6b15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &985262238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8643550456547651702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b028dac1747536a41b0d3d51b626c569, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 0
+  maxHealth: 5
+  invincibleLength: 2
+  invincCounter: 0
 --- !u!1 &8643550456577612255
 GameObject:
   m_ObjectHideFlags: 0
@@ -2653,7 +2670,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8643550456781986408}
-  m_LocalRotation: {x: 0.25474745, y: 0.5825664, z: -0.19900899, w: 0.7457316}
+  m_LocalRotation: {x: 0.25474748, y: 0.5825664, z: -0.199009, w: 0.7457316}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -3497,7 +3514,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8643550457184882267}
-  m_LocalRotation: {x: 0.26826978, y: 0.57885015, z: -0.20957261, w: 0.7409745}
+  m_LocalRotation: {x: 0.26826978, y: 0.5788501, z: -0.20957264, w: 0.7409745}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -3768,7 +3785,7 @@ Transform:
   m_GameObject: {fileID: 8643550457318664418}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 257.4, y: 21.5, z: 250}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.09, y: 1.09, z: 1.09}
   m_Children:
   - {fileID: 8643550456534366294}
   - {fileID: 8643550456547651700}
@@ -3851,7 +3868,7 @@ GameObject:
   - component: {fileID: 8643550457423125611}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3864,7 +3881,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8643550457423125604}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -257.4, y: -21.5, z: -250}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8643550455896541392}
@@ -3883,13 +3900,13 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 0.9
+  m_Height: 0.84
   m_Radius: 0.29
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0.4, z: 0}
+  m_Center: {x: 0, y: 0.37, z: 0}
 --- !u!114 &8643550457423125611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3910,6 +3927,9 @@ MonoBehaviour:
   playercamera: {fileID: 8643550456534366295}
   playerModel: {fileID: 8643550455896541395}
   animator: {fileID: 8643550455896541393}
+  isKnocking: 0
+  knockBackLength: 0.5
+  knockbackPower: {x: -3, y: -5}
 --- !u!1 &8643550457467217604
 GameObject:
   m_ObjectHideFlags: 0
