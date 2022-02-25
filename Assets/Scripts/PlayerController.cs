@@ -19,6 +19,13 @@ public class PlayerController : MonoBehaviour
 
     public Animator animator;
 
+    public static PlayerController instance;
+
+    private void Awake()
+    {
+        instance = this;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -40,7 +47,7 @@ public class PlayerController : MonoBehaviour
         //Saltar
         if (charController.isGrounded)
         {
-            moveDirection.y = 0f;
+            //moveDirection.y = 0f;
             if (Input.GetButtonDown("Jump"))
             {
                 moveDirection.y = jumpForce;
