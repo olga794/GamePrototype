@@ -9,10 +9,7 @@ public class KillPlayer : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            
-            GameManager.instance.Respawn();
-            
-            
+            Debug.Log("muerto");
         }
     }
 }
