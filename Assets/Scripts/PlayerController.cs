@@ -1,9 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public static PlayerController instance;
     public float moveSpeed;
     public float jumpForce;
     public float gravityScale = 5f;
@@ -18,6 +20,11 @@ public class PlayerController : MonoBehaviour
     public GameObject playerModel;
 
     public Animator animator;
+
+    private void Awake()
+    {
+        instance = this;
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -40,7 +47,7 @@ public class PlayerController : MonoBehaviour
         //Saltar
         if (charController.isGrounded)
         {
-            moveDirection.y = 0f;
+            //moveDirection.y = 0f;
             if (Input.GetButtonDown("Jump"))
             {
                 moveDirection.y = jumpForce;
