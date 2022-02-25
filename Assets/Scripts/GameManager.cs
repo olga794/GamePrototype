@@ -38,5 +38,6 @@ public class GameManager : MonoBehaviour
         UIManager.Instance.fadeFromBlack = true;
         PlayerController.instance.transform.position = respawnPosition;
         PlayerController.instance.gameObject.SetActive(true);
+        HealthManager.Instance.ResetHealth();
     }
 }

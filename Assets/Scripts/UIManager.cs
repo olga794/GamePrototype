@@ -7,6 +7,8 @@ public class UIManager : MonoBehaviour
     public Image bluescreen;
     public float fadeSpeed;
     public bool fadeToBlack, fadeFromBlack;
+    // agregar al  canvas
+    public Text TexHearlth;
 
     private void Awake()
     {
